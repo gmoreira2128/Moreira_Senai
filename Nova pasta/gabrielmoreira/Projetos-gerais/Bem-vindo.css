@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: url(img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    left: 270px;
+    position: absolute;
+
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+h2{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 94%;
+    margin: 20px;
+    font-size: large;
+    height: 40px;
+    color: white;
+    left: 0.2%;
+}
+
+.Proxima-Pag{
+    left: 80%;
+    top: 94%;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    
+    font-size: 40px;
+    text-decoration: none;
+    font-size: 30px;
+    
+    opacity: 0.4;
+    cursor: pointer;
+    color:black;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.Proxima-Pag:hover{
+    color: rgb(255, 255, 255);
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+.description{
+    margin-left: 10px;
+    top: 80%;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+}

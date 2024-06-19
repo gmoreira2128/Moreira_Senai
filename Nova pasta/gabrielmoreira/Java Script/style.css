@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+
+.teste-login{
+    text-align: center;
+    justify-content: center;
+    margin-top: 150px;
+    color: green;
+}
+
+.input-box{
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.botao{
+    outline: none;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.LoginForm{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    justify-content: center;
+    left: 40%;
+}
+
+.input-box::placeholder{
+    border: none;
+}

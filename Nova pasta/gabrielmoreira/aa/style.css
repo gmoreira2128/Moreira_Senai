@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient();
+}
+
+.topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000080;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+
+.titulo {
+    margin: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #000080;
+    padding-top: 50px;
+    transition: left 0.3s ease;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.btn {
+    background: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        left: -100%;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .topo {
+        justify-content: space-around;
+    }
+
+    .titulo {
+        text-align: center;
+    }
+
+    .slider img{
+        flex-wrap: wrap; 
+        width: 100%;
+    }
+}
+
+.bx-menu {
+    width: 30px;
+    height: 30px;
+    font-size: xx-large;
+    position: absolute;
+    left: 10px;
+    top: 30%;
+}
+
+.bx-cart {
+    top: 30%;
+    background: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: xx-large;
+    position: absolute;
+    right: 20px;
+}
+
+.rodape {
+    position: absolute;
+    bottom: 0;
+    background-color: #000080;
+    width: 100%;
+    height: 90px;
+}
+
+.rodape a {
+    width: max-content;
+    color: white;
+    gap: 30px;
+}
+
+.I {
+    position: absolute;
+    left: 25%;
+    top: 93%;
+    z-index: 10;
+    color: #fff;
+    text-decoration: none;
+}
+
+.T {
+    position: absolute;
+    left: 50%;
+    top: 93%;
+    z-index: 10;
+    color: #fff;
+    text-decoration: none;
+}
+
+.F {
+    position: absolute;
+    left: 75%;
+    top: 93%;
+    z-index: 10;
+    color: #fff;
+    text-decoration: none;
+}
+
+.slider {
+    display: block;
+    height: 350px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: absolute;
+    top: 0%;
+    left: 36%;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    mix-blend-mode: multiply;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000080;
+    border-radius: 15px;
+    bottom: 15px;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    position: absolute;
+    width: 15px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: visible;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.slider-container .OUS{
+    
+}
+
+.slider-container img{
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 40%;
+    overflow: hidden;
+}
+
+.adidas {
+    height: 600px;
+}
+
+.nike {
+    height: 600px;
+}
+
+.vans {
+    height: 600px;
+}
+
+
