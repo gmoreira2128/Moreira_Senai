@@ -23,20 +23,23 @@
     padding: 0;
 }
 
+/*Mexe em todos os objetos da tela*/
 .container{
 display: grid;
 grid-template-areas: 
-'soma subtracao multiplicacao'
-'divisao fatorial imc'
-'nome-sobrenome teste-Login mostrar-img';
+    'soma subtracao multiplicacao'
+    'divisao fatorial imc'
+    'nome-sobrenome teste-Login mostrar-img';
 gap: 10px;
 background-color: purple;
 padding: 10px;
 width: 100%;
 height: 100vh;
 box-sizing: border-box;
+text-align: center;
 }
 
+/*Div dos itens*/
 .container > div{
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
@@ -45,31 +48,66 @@ box-sizing: border-box;
     text-align: center;
     background-color: rgb(241, 53, 241);
     color: white;
+    align-items: center;
 }
 
+/*Campos para preencher*/
 input{  
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width: 120px;
     height: 30px;
     left: 130px;
-    top: 30px;
     border: none;
     border-radius: 8px;
+    padding: 5px;
+    top: 5%;
 }
 
+/*Botões*/
 .results{
     position: relative;
     width: 120px;
     height: 30px;
-    left: 130px;
-    top: 80px;
+    left: 8px;
+    top: 110px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
 }
 
+/*Muda a cor dos botões quando o mouse estiver em cima*/
 .results:hover{
     transition: 10ms;
     background-color: purple;
     color: white;
 }   
+
+/*Muda o espaçamento dos input e a posição deles*/
+.entradas{
+    text-align: center;
+    left: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+
+/*Muda caracteristicas do input de respostas e o botão de "Resposta"*/
+.respostas{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: -25px;
+    justify-content: center;
+}
+
+.imagem{
+    display: none;
+    border: none;
+}
+
+#respostas9{
+    display: none;
+}
