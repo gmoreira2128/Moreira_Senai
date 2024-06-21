@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('result-NomeSobrenome').value = nome + " " + sobrenome;
     });
 
-    // Login (apenas um exemplo de alerta)
+    // Login
     document.getElementById('btn-8').addEventListener('click', () => {
         const email = document.getElementById('login').value;
         const password = document.getElementById('password').value;
@@ -69,10 +69,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Mostrar imagem
-    document.getElementById('btn-9').addEventListener('click', () => {
-        const imgURL = document.getElementById('img-escolhida').value;
-        const imgElement = document.createElement('img');
-        imgElement.src = imgURL;
-        document.body.appendChild(imgElement);
-    });
-});
+    document.getElementById("btn-9").addEventListener('click', MudaImg);
+    function MudaImg(){
+        let ExibeImg = document.getElementById('respostas9');
+        console.log("oaa");
+
+        if(ExibeImg.style.display == "block"){
+            ExibeImg.style.display = "none";
+        } else{
+            ExibeImg.style.display = "block";
+        };
+
+    };
+})
