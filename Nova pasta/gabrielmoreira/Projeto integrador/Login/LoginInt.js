@@ -21,15 +21,18 @@ document.getElementById('login').addEventListener('click', function(){
     email1 = document.getElementById('email-login').value;
     senha1 = document.getElementById('senha-login').value;
 
-    EmailPadrao = "examplo@email.com";
+    EmailPadrao = "exemplo@email.com";
     SenhaPadrao = "senha123";
 
     if(email1 === EmailPadrao && senha1 === SenhaPadrao){
+        console.log("Login realizado");
         mensagem1 = document.getElementById('mensagem-sucesso').innerHTML = "Login realizado com sucesso";
-        mensagem1.style.color = "green";
-    } else{
+        mensagem1.style.color = 'green';
+    }
+    else{
+        console.log("Login não realizado");
     mensagem2 = document.getElementById('mensagem-falha').innerHTML = "Login ou senha invalido";
-    mensagem2.style.color = "red";
+    mensagem2.style.color = 'red';
     }
 
 });
