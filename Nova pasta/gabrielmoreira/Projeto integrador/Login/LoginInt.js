@@ -1,16 +1,36 @@
-document.getElementById('').addEventListener('submit', function(event){
-    event.preventDefault();
+document.getElementById('btn-menu').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.toggle("active");
+});
 
-    const username = document.getElementById('User').value;
-    const password = document.getElementById('password').value;
-
-
-    const defaultUsername = 'User';
-    const defaultPassword = 'senha123';
-
-    if(username === defaultUsername && password === defaultPassword){
-        window.location.href = 'Pagina-Inicial';
-    }   else{
-        document.getElementById
+window.onclick = function(event) {
+    if (!event.target.closest('#sidebar') && !event.target.closest('#btn-menu')) {
+        var dropdowns = document.getElementsByClassName('sidebar');
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('active')) {
+                openDropdown.classList.remove('active'); 
+            }
+        }
     }
-})
+};
+
+
+document.getElementById('login').addEventListener('click', function(){
+
+    email1 = document.getElementById('email-login').value;
+    senha1 = document.getElementById('senha-login').value;
+
+    EmailPadrao = "examplo@email.com";
+    SenhaPadrao = "senha123";
+
+    if(email1 === EmailPadrao && senha1 === SenhaPadrao){
+        mensagem1 = document.getElementById('mensagem-sucesso').innerHTML = "Login realizado com sucesso";
+        mensagem1.style.color = "green";
+    } else{
+    mensagem2 = document.getElementById('mensagem-falha').innerHTML = "Login ou senha invalido";
+    mensagem2.style.color = "red";
+    }
+
+});
+
