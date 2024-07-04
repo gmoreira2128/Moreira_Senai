@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Login.css">
-    <title>Projeto Integrador</title>
-</head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+    <title>Login Project</title>
+</head>      
 <body>
-    
-    <div class="form-login">
-        <form class="tudo">
-            <h1>LOGIN</h1>
-            <input type="text" placeholder="Usuário" class="User" id="User">
-            <br>
-            <input type="password" placeholder="password" class="Senha" id="password">
-        </form>
+    <header class="topo">
+        <h1>Faça seu Login ou Cdastre-se</h1>
+        <button class="btn-menu" id="btn-menu"><i class='bx bx-menu'></i></button>
+    </header>
 
-        <button class="env">Login</button>
-        <button class="cad">Cadastre-se</button>
+    <div class="container" id="dropdown">
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <br>
+                <br>
+                <br>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Trabalhe conosco</a></li>
+                <li><a href="#">Promoções</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <input type="email" id="email-login" placeholder="Digite seu Email" required>
+        <input type="password" id="senha-login" placeholder="Digite sua Senha" required>
+        <div class="botoes">
+            <button class="btn" id="login">Login</button>
+            <button class="btn" id="cad">Cadastre-se</button>
+            <p id="mensagem-sucesso"></p>
+            <p id="mensagem-falha"></p>
+        </div>
     </div>
 
-    <script src="Login.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
