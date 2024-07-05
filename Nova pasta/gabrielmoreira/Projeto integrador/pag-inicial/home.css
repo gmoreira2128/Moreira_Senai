@@ -22,12 +22,14 @@ body {
     height: 100vh;
     color: black;
     text-align: center;
+    background-color: mediumaquamarine;
 }
 
 .topo {
     width: 100%;
     text-align: center;
     padding: 20px;
+    background-color: lightblue;
 }
 
 .btn-menu {
@@ -72,7 +74,7 @@ body {
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #7b7b7b2c;
+    background-color: lightblue;
     padding-top: 50px;
     transition: left 0.3s ease;
 }
