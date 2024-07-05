@@ -15,7 +15,7 @@ body{
     font-family: "Poppins", sans-serif;
     align-items: center;
     justify-content: center;
-    background-color: #7b7b7b2c;
+    background-color: mediumaquamarine;
     color: black;
 }
 
@@ -33,7 +33,7 @@ body{
     top: 20%;
     left: 32%;
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 0px solid black;
     border-radius: 5px;
     text-align: center;
     align-items: center;
@@ -41,13 +41,17 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    box-shadow: 5px, 10px, #8888;
+    background-color: lightblue;
 }
 
 input{
-    background-color: gray;
+    position: relative;
+    background-color: transparent;
     width: 200px;
     height: 40px;
-    border: none;
+    top: 20px;
+    border: 2px solid black;
     border-radius: 5px;
     outline: none;
     color: black;
@@ -56,7 +60,7 @@ input{
 
 input::placeholder{
     font-size: medium;
-    color: white;
+    color: black;
     text-align: center;
     padding: 2px;
 }
