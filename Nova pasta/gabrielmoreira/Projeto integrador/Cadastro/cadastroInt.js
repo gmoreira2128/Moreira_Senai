@@ -1,23 +1,18 @@
-document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+const form = document.getElementById("form");
+const form = document.getElementById("username");
+const form = document.getElementById("email");
+const form = document.getElementById("password");
+const form = document.getElementById("password-confirmation");
+
+form.addEventListener("submit", (event) =>{
     event.preventDefault();
 
-    const nome = document.querySelector('.Nome-Cliente').value.trim();
-    const sobrenome = document.querySelector('.Sobrenome-Cliente').value.trim();
-    const endereco = document.querySelector('.CPF-Cliente').value.trim();
-    const telefone = document.querySelector('.Numero-Cliente').value.trim();
-    const email = document.querySelector('.Email-Cliente').value.trim();
-    const senha = document.querySelector('.Senha-Cliente').value.trim();
-    const Confsenha = document.querySelector('.conf-Senha-Cliente').value.trim();
+    alert("Cadastrado com sucesso");
+})
 
-    if (!nome || !sobrenome || !endereco || !telefone || !email || !senha) {
-        document.getElementById('errorMessage').style.display = 'block';
-        return;
-    }
 
-    document.getElementById('errorMessage').style.display = 'none';
-    window.open('Bem-vindo.html', '_blank');
-});
+function checkInputUsername(){
+    const usernameValue = username.value;
 
-document.getElementById('cancelButton').addEventListener('click', function() {
-    window.open('login.html', '_blank');
-});
+    console.log(usernameValue)
+}
