@@ -26,62 +26,6 @@ body{
     padding: 20px;
 }
 
-.btn-menu{
-    position: absolute;
-    left: 2px;
-    top: 20px;
-    width: 60px;
-    height: 20px;
-    border: none;
-    border-radius: 8px;
-    background: transparent;
-    color: black;
-    cursor: pointer;
-}
-
-
-.btn-menu i{
-    font-size: xx-large;
-    text-align: center;
-}
-
-.menu-bar{
-    height: 0%;
-    width: 0%;
-    margin-top: 0px;
-    margin: 0px;
-    display: none;
-}
-
-.menu-bar:active{
-    height: 100%;
-    width: 40px;
-    background-color: black;
-    margin-top: 2px;
-    margin: 5px;
-    font-size: small;
-    color: white;
-    text-align: left;
-}
-
-.menu-bar li{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-}
-
-.menu-bar li a{
-    text-decoration: none;
-    outline: none;
-    font-size: small;
-}
-
-.menu-bar li a:hover{
-    transition-duration: 4ms;
-    text-decoration: underline;
-    color: blue;
-    font-size: medium;
-}
 
 .container{
     position: absolute;
@@ -119,39 +63,6 @@ input::placeholder{
 }
 
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #7b7b7b2c;
-    padding-top: 50px;
-    transition: left 0.3s ease;
-}
-
-.sidebar.active {
-    left: 0;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    padding: 10px;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: black;
-    display: block;
-}
-
-.sidebar ul li a:hover{
-    text-decoration: underline;
-}
 
 .botoes{
     position: relative;
@@ -178,17 +89,6 @@ input::placeholder{
 @media screen and (max-width: 768px) {
     .container{
         flex-direction: column;
-    }
-
-    .menu-bar{
-        width: 100%;
-        height: auto;
-        padding-top: 20px;
-        left: -100%;
-    }
-
-    .menu-bar:active{
-        left: 0;
     }
 
     .topo{
