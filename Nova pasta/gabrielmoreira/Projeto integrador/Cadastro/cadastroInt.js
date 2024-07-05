@@ -1,18 +1,26 @@
-const form = document.getElementById("form");
-const form = document.getElementById("username");
-const form = document.getElementById("email");
-const form = document.getElementById("password");
-const form = document.getElementById("password-confirmation");
+document.getElementById('cad').addEventListener('click', function() {
+    // Captura dos valores dos campos de entrada
+    var nome = document.getElementById('nome').value.trim();
+    var sobrenome = document.getElementById('sob-nome').value.trim();
+    var cpf = document.getElementById('cpf').value.trim();
+    var telefone = document.getElementById('tel').value.trim();
+    var email = document.getElementById('email-login').value.trim();
+    var senha = document.getElementById('senha-login').value;
+    var confirmSenha = document.getElementById('confirm-senha').value;
 
-form.addEventListener("submit", (event) =>{
-    event.preventDefault();
+    // Validar se todos os campos foram preenchidos
+    if (nome === '' || sobrenome === '' || cpf === '' || telefone === '' || email === '' || senha === '' || confirmSenha === '') {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
 
-    alert("Cadastrado com sucesso");
-})
+    // Validar se as senhas coincidem
+    if (senha !== confirmSenha) {
+        alert('As senhas não coincidem. Por favor, verifique.');
+        return;
+    }
 
 
-function checkInputUsername(){
-    const usernameValue = username.value;
-
-    console.log(usernameValue)
-}
+    alert('Cadastro realizado com sucesso!');
+    window.location.href = '../pag-inicial/home.html'; // Redireciona para a página inicial após o cadastro
+});
