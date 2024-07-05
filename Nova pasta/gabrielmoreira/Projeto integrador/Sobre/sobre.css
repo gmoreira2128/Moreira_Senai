@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: #7b7b7b2c;
+    background-color: mediumaquamarine;
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,7 @@ body {
     width: 100%;
     text-align: center;
     padding: 20px;
+    background-color: lightblue;
 }
 
 .btn-menu {
@@ -72,7 +73,7 @@ body {
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #7b7b7b2c;
+    background-color: lightblue;
     padding-top: 50px;
     transition: left 0.3s ease;
 }
@@ -113,6 +114,7 @@ body {
     display: flex;
     flex-direction: column;
     color: black;
+    cursor: default;
 }
 
 #resum{
@@ -135,6 +137,7 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    cursor: default;
 }
 
 #why-use{
@@ -152,10 +155,12 @@ body {
     border: 2px solid black;
     border-radius: 8px;
     box-sizing: border-box;
+    box-shadow: 10px, 10px, 20px, black;
     text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    cursor: default;
 }
 
 #partners-resum{
