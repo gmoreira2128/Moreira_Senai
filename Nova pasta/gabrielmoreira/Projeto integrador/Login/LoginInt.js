@@ -18,6 +18,13 @@ document.getElementById('login').addEventListener('click', function() {
 });
 
 
+function redirecionaHome(){
+    window.location.href="../pag-inicial/home.html"
+}
+
+document.getElementById('login').addEventListener('click', redirecionaHome)
+
+
 function redirecionaCadastro(){
     window.location.href="../cadastro/cadastro.html";
 }
