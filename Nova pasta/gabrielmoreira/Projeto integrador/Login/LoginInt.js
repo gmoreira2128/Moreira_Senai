@@ -16,3 +16,10 @@ document.getElementById('login').addEventListener('click', function() {
         document.getElementById('mensagem-falha').innerHTML = "Login ou senha inválidos";
     }
 });
+
+
+function redirecionaCadastro(){
+    window.location.href="../cadastro/cadastro.html";
+}
+
+document.getElementById('cadastros').addEventListener('click', redirecionaCadastro);
