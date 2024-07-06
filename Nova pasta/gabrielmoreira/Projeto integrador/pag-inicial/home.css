@@ -68,6 +68,7 @@ body {
     text-align: center;
 }
 
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -77,6 +78,7 @@ body {
     background-color: lightblue;
     padding-top: 50px;
     transition: left 0.3s ease;
+    z-index: 1;
 }
 
 .sidebar.active {
@@ -132,6 +134,12 @@ body {
     margin-top: 20px; /* Espaço adicional para mover o contêiner para baixo */
     border: none;
     border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.product-card img {
+    width: calc(44.44% - 40px); /* Calcula a largura das imagens para ocupar um terço do espaço disponível, menos a gap */
+    margin-bottom: 40px; /* Espaço entre as linhas */
 }
 
 .produto {
