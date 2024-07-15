@@ -20,9 +20,10 @@ body{
 }
 
 .topo{
-    width: 100%;
+    width: 95%;
     text-align: center;
     align-items: center;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -41,7 +42,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 1px solid black;
+    border: 0px solid black;
     box-shadow: 5px, 10px, #8888;
     background-color: lightblue;
 }
@@ -101,12 +102,47 @@ input::placeholder{
     color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+
     .container{
+        width: 500px;
+        height: 500px;
         flex-direction: column;
     }
 
     .topo{
-        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px){
+
+    .topo h1{
+        font-size: 22px;
+        color: white;
+        cursor: default;
+    }
+
+    .container{
+        left: 17%;
+        width: 350px;
+        height: 350px;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container i{
+        position: absolute;
+        right: 10%;
+        top: 27.5%;
+        font-size: xx-large;
+    }
+    
+    #icon-senha{
+        position: absolute;
+        right: 10%;
+        top: 47%;
+        font-size: xx-large;
     }
 }
