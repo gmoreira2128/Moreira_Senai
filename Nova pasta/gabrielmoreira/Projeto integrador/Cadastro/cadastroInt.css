@@ -20,7 +20,7 @@ body{
 }
 
 .topo{
-    width: 100%;
+    width: 95%;
     text-align: center;
     align-items: center;
     padding: 20px;
@@ -88,12 +88,32 @@ input::placeholder{
     color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .container{
         flex-direction: column;
     }
 
     .topo{
         justify-content: space-around;
+    }
+}
+
+@media (max-width: 500px){
+    
+    .topo{
+        width: 450px;
+        height: 10px;
+    }
+
+    .container{
+        position: absolute;
+        top: 130px;
+        width: 350px;
+        height: 350px;
+        left: 85px;
+    }
+
+    input{
+        top: 27px;
     }
 }
