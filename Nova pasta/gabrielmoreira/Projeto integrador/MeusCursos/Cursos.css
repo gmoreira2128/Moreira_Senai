@@ -104,6 +104,38 @@ body {
     text-decoration: underline;
 }
 
+#concluir-inscricao {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#concluir-inscricao:hover {
+    background-color: #45a049;
+}
+
+
+.valor, .carga-horaria {
+    width: 70px;
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.valor {
+    background-color: #e8f0fe;
+}
+
+.carga-horaria {
+    background-color: #e6ffe6;
+}
+
 @media (max-width: 500px){
     .topo{
         text-align: center;
