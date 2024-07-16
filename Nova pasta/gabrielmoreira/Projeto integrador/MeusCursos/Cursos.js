@@ -27,19 +27,35 @@ document.addEventListener('DOMContentLoaded', function() {
             var cursoNome = document.createElement('span');
             cursoNome.textContent = curso;
             
+            var valorInput = document.createElement('input');
+            valorInput.type = 'text';
+            valorInput.placeholder = 'Valor';
+            valorInput.className = 'valor';
+            
+            var cargaHorariaInput = document.createElement('input');
+            cargaHorariaInput.type = 'text';
+            cargaHorariaInput.placeholder = 'Carga Horária';
+            cargaHorariaInput.className = 'carga-horaria';
+            
             var removerBtn = document.createElement('button');
             removerBtn.textContent = 'Remover';
             removerBtn.addEventListener('click', function() {
                 removerCurso(curso);
             });
-            
+
             cursoDiv.appendChild(cursoNome);
+            cursoDiv.appendChild(valorInput);
+            cursoDiv.appendChild(cargaHorariaInput);
             cursoDiv.appendChild(removerBtn);
             container.appendChild(cursoDiv);
         });
     } else {
         container.textContent = 'Você não tem cursos inscritos.';
     }
+
+    document.getElementById('concluir-inscricao').addEventListener('click', function() {
+        concluirInscricao();
+    });
 });
 
 function removerCurso(curso) {
@@ -50,4 +66,24 @@ function removerCurso(curso) {
         localStorage.setItem('meusCursos', JSON.stringify(meusCursos));
         location.reload(); // Recarrega a página para atualizar a lista
     }
+}
+
+function concluirInscricao() {
+    var cursos = document.querySelectorAll('.curso');
+    var inscricaoDetalhes = [];
+    
+    cursos.forEach(function(cursoDiv) {
+        var cursoNome = cursoDiv.querySelector('span').textContent;
+        var valor = cursoDiv.querySelector('.valor').textContent = "500R$";
+        var cargaHoraria = cursoDiv.querySelector('.carga-horaria').textContent = "450 horas";
+
+        inscricaoDetalhes.push({
+            curso: cursoNome,
+            valor: valor,
+            cargaHoraria: cargaHoraria
+        });
+    });
+
+    console.log('Detalhes da inscrição:', inscricaoDetalhes);
+    // Aqui você pode adicionar código para enviar esses detalhes para um servidor ou processá-los conforme necessário
 }
