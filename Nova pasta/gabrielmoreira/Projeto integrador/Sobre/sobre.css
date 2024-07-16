@@ -76,6 +76,7 @@ body {
     background-color: lightblue;
     padding-top: 50px;
     transition: left 0.3s ease;
+    z-index: 1;
 }
 
 .sidebar.active {
@@ -167,4 +168,20 @@ body {
     font-size: small;
     font-family: "Poppins", sans-serif;
     position: relative;
+}
+
+@media (max-width: 500px){
+    .description{
+        top: 20%;
+    }
+
+    .why{
+        top: 55%;
+        left: 20%;
+    }
+
+    .partners{
+        top: 90%;
+        left: 20%;
+    }
 }
