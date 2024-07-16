@@ -173,6 +173,7 @@ body {
 @media (max-width: 500px){
     .description{
         top: 20%;
+        left: 20%;
     }
 
     .why{
