@@ -186,3 +186,11 @@ body {
     text-align: center;
     justify-content: center;
 }
+
+.btn-insc{
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    height: 20px;
+    cursor: pointer;
+}
