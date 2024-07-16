@@ -14,3 +14,30 @@ window.onclick = function(event) {
         }
     }
 };
+
+// Função para redirecionar para a página de login
+function redirecionarParaLogin() {
+    window.location.href = '../login/login.html';
+}
+
+// Adiciona um event listener a um botão para redirecionar ao login
+document.getElementById('btn-user').addEventListener('click', redirecionarParaLogin);
+
+document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.btn-insc');
+    
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var curso = this.getAttribute('data-curso');
+            var meusCursos = JSON.parse(localStorage.getItem('meusCursos')) || [];
+            
+            if (!meusCursos.includes(curso)) {
+                meusCursos.push(curso);
+                localStorage.setItem('meusCursos', JSON.stringify(meusCursos));
+                alert(curso + ' foi adicionado aos seus cursos.');
+            } else {
+                alert(curso + ' já está nos seus cursos.');
+            }
+        });
+    });
+});
