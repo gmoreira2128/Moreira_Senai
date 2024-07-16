@@ -106,6 +106,7 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
+    background-color: lightblue;
     border: solid 2px transparent;
     box-shadow: 10px 10px 5px grey;
     top: 30%;
@@ -116,10 +117,10 @@ body {
 }
 
 input{
-    border: none;
-    border-radius: 8px;
+    border-radius: 30px;
     padding: 8px;
     background: transparent;
+    text-align: center;
     margin: 8px;
     cursor: pointer;
 }
@@ -135,17 +136,21 @@ input::placeholder{
     top: 15pc;
     left: 40%;
     border: none;
-    border-radius: 10px;
+    border-radius: 2px;
     background-color: grey;
     color: #fff;
-    width: 60px;
-    height: 20px;
+    width: 90px;
+    height: 40px;
     cursor: pointer;
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
 }
 
 .envia-curriculo:hover{
     transition: 8ms;
     color: #000;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 5px 5px 2px black;
 }
 
 #mensagem-enviada{
@@ -195,5 +200,11 @@ input::placeholder{
         border: none;
         border-radius: 5px;
         cursor: pointer;
+    }
+
+    #mensagem-enviada{
+        position: absolute;
+        top: 18pc;
+        left: 20%;
     }
 }
