@@ -104,6 +104,16 @@ body {
     text-decoration: underline;
 }
 
+@media (max-width: 500px){
+    .topo{
+        text-align: center;
+    }
+
+    .topo h1{
+        font-size: 22px;
+    }
+}
+
 .meus-cursos {
     display: flex;
     flex-direction: column;
