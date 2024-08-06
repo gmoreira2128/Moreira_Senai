@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <!--inicio do Header-->
+    <header>
+        <h1>Pokedex</h1>
+    </header>
+    <!--Fim do Header-->
+
+    <!--Container de Pesquisa-->
+    <div class="container-pesquisa">
+        <input type="text" id="pesquisa" placeholder="Pesquise">
+        <button id="pesquisar"><i class='bx bx-search'></i></button>
+    </div>
+
+    <!--Filtro para ordenar os Pokemons-->
+    <select id="filtro-tipo">
+        <option value="">Todos os Tipos</option>
+        <!-- Tipos serão preenchidos pelo JavaScript -->
+    </select>
+
+    <!--Inicio da div que controla todos os cards-->
+    <div class="container-cards">
+        
+        <!--inicio do primeiro card-->
+        <div class="card" data-pokemon="Abra">
+            <img src="../Pasta 2/imagens/abra.png" alt="Abra">
+            <h1>Abra</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do primeiro card-->
+
+        <!--inicio do segundo card-->
+        <div class="card" data-pokemon="Aerodactyl">
+            <img src="../Pasta 2/imagens/aerodactyl.png" alt="Aerodactyl">
+            <h1>Aerodactyl</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do segundo card-->
+
+        <!--inicio do terceiro card-->
+        <div class="card" data-pokemon="Alakazam">
+            <img src="../Pasta 2/imagens/alakazam.png" alt="Alakazam">
+            <h1>Alakazam</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do terceiro card-->
+        
+        <!--inicio do quarto card-->
+        <div class="card" data-pokemon="Arbok">
+            <img src="../Pasta 2/imagens/arbok.png" alt="Arbok">
+            <h1>Arbok</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do quarto card-->
+
+        <!--inicio do quinto card-->
+        <div class="card" data-pokemon="Arcanine">
+            <img src="../Pasta 2/imagens/arcanine.png" alt="arcanine">
+            <h1>Arcanine</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do quinto card-->
+
+        <!--inicio do sexto card-->
+        <div class="card" data-pokemon="Articuno">
+            <img src="../Pasta 2/imagens/articuno.png" alt="Articuno">
+            <h1>Articuno</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do sexto card-->
+
+        <!--inicio do sétimo card-->
+        <div class="card" data-pokemon="Beedrill">
+            <img src="../Pasta 2/imagens/beedrill.png" alt="Beedrill">
+            <h1>Beedrill</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do sétimo card-->
+        
+        <!--inicio do decimo card-->
+        <div class="card" data-pokemon="Bellsprout">
+            <img src="../Pasta 2/imagens/bellsprout.png" alt="Beedrill">
+            <h1>Bellsprout</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do decimo card-->
+
+        <!--inicio do decimo-primeiro card-->
+        <div class="card" data-pokemon="Blastoise">
+            <img src="../Pasta 2/imagens/blastoise.png" alt="Blastoise">
+            <h1>Blastoise</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do decimo-primeiro card-->
+
+        <!--inicio do decimo-segundo card-->
+        <div class="card" data-pokemon="Bulbasauro">
+            <img src="../Pasta 2/imagens/bulbasaur.png" alt="Bulbasauro">
+            <h1>Bulbasauro</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do decimo-segundo card-->
+
+        <!--inicio do decimo-terceiro card-->
+        <div class="card" data-pokemon="Butterfree">
+            <img src="../Pasta 2/imagens/butterfree.png" alt="butterfree">
+            <h1>Butterfree</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do decimo-terceiro card-->
+
+        <!--inicio do decimo-quarto card-->
+        <div class="card" data-pokemon="Caterpie">
+            <img src="../Pasta 2/imagens/caterpie.png" alt="caterpie">
+            <h1>Caterpie</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do decimo-quarto card-->
+
+        <!--inicio do decimo-quinto card-->
+        <div class="card" data-pokemon="Chansey">
+            <img src="../Pasta 2/imagens/chansey.png" alt="Chansey">
+            <h1>Chansey</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do decimo-quinto card-->
+
+        <!--Inicio do decimo-sexto card-->
+        <div class="card" data-pokemon="Charizard">
+            <img src="../Pasta 2/imagens/charizard.png" alt="Charizard">
+            <h1>Charizard</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do decimo-sexto card-->
+
+        <!--Inicio do decimo-setimo card-->
+        <div class="card" data-pokemon="Charmander">
+            <img src="../Pasta 2/imagens/charmander.png" alt="Charmander">
+            <h1>Charmander</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do decimo-setimo card-->
+
+        <!--Inicio do decimo-oitavo card-->
+        <div class="card" data-pokemon="Charmeleon">
+            <img src="../Pasta 2/imagens/charmeleon.png" alt="Beedrill">
+            <h1>Charmeleon</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do decimo-oitavo card-->
+
+        <!--Inicio do decimo-nono card-->
+        <div class="card" data-pokemon="Clefable">
+            <img src="../Pasta 2/imagens/clefable.png" alt="Clefable">
+            <h1>Clefable</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do decimo-nono card-->
+
+        <!--Inicio do vigésimo card-->
+        <div class="card" data-pokemon="Clefairy">
+            <img src="../Pasta 2/imagens/clefairy.png" alt="Clefairy">
+            <h1>Clefairy</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do vigésimo card-->
+
+        <!--Inicio do vigésimo-primeiro card-->
+        <div class="card" data-pokemon="Cloyster">
+            <img src="../Pasta 2/imagens/cloyster.png" alt="Cloyster">
+            <h1>Cloyster</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do vigésimo-peimeiro card-->
+
+        <!--Inicio do vigésimo-segundo card-->
+        <div class="card" data-pokemon="Cubone">
+            <img src="../Pasta 2/imagens/cubone.png" alt="Cubone">
+            <h1>Cubone</h1>
+            <p class="description"></p>
+        </div>
+        <!--Fim do vigésimo-segundo card-->
+
+    </div>
+<!--Fim da div que controla todos os cards-->
+    
+<script src="script.js"></script>
+</body>
+</html>

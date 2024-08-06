@@ -1,0 +1,126 @@
+/* Reset de margens e preenchimentos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico do corpo */
+body {
+    background-color: aqua;
+    padding: 30px;
+    margin: 0 auto; /* Centraliza horizontalmente o corpo */
+    max-width: 1200px; /* Limita a largura máxima para melhorar a leitura */
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: gray;
+    padding: 20px;
+    width: 100%;
+    position: fixed; /* Mantém o cabeçalho fixo no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+/* Estilo do título */
+h1 {
+    color: white;
+}
+
+/* Estilo do container de pesquisa */
+.container-pesquisa {
+    margin: 100px auto 20px auto; /* Ajusta o espaçamento e centraliza o container */
+    width: 600px;
+}
+
+/* Estilo do campo de pesquisa */
+input[type="text"] {
+    width: calc(100% - 60px); /* Ajusta a largura para incluir o botão */
+    height: 30px; /* Aumenta a altura para melhor visualização */
+    outline: none;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 0 10px; /* Adiciona preenchimento interno */
+}
+
+/* Estilo do botão de pesquisa */
+#pesquisar {
+    width: 50px; /* Aumenta o tamanho do botão para melhor usabilidade */
+    height: 30px;
+    top: 50px;
+    border: 2px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    font-size: 18px; /* Aumenta o tamanho do ícone */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pesquisar:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Estilo do container de cartões */
+.container-cards {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões se ajustem em várias linhas */
+    gap: 10px;
+    justify-content: center; /* Centraliza os cartões */
+}
+
+/* Estilo dos cartões */
+.card {
+    width: 200px;
+    height: 270px;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden; /* Garante que as imagens e textos não saiam dos limites */
+    cursor: pointer;
+    text-align: center;
+    background-color: #f9f9f9; /* Adiciona um fundo claro para os cartões */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Garante que a imagem se ajuste ao tamanho sem distorção */
+    margin-bottom: 10px;
+}
+
+.card .description {
+    font-size: 14px;
+    color: #333;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* Efeito de hover para os cartões */
+.card:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    border-color: #4CAF50; /* Muda a cor da borda ao passar o mouse */
+}
+
+/* Mudança na cor da letra que está dentro dos cards*/
+.card h1{
+    color: black;
+}
+
+/*Mudança na posição do filtro de Pokemons*/
+#filtro-tipo{
+    position: absolute;
+    left: 66%;
+    top: 14%;
+}
