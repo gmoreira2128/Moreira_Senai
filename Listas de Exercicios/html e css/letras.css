@@ -1,0 +1,39 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: white;
+}
+
+#primeira-frase
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+#segunda-frase
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: green;
+}
+
+#terceira-frase
+{
+    font-family: Comic, sans-serif;
+    font-size: 20px;
+    color: blue;
+    font-style: italic;
+}
+
+#quarta-frase
+{
+    font-family: Verdana;
+    font-weight: bold;
+    color: yellow;
+    font-size: 14px;
+}
