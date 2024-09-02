@@ -1,0 +1,53 @@
+#container
+{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid gray;
+}
+
+#esq-cima
+{
+    position: relative;
+    background-color: red;
+    width: 90px;
+    height: 90px;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#esq-baixo
+{
+    position: relative;
+    background-color: green;
+    top: 620px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+}
+
+#dir-cima
+{
+    position: absolute;
+    background-color: yellow;
+    top: 0;
+    left: 88.8%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+}
+
+#dir-baixo
+{
+    position: absolute;
+    background-color: blue;
+    width: 90px;
+    height: 90px;
+    top: 710px;
+    left: 88.8%;
+    text-align: center;
+}

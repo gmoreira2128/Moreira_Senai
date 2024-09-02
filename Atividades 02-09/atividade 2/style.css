@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+#container {
+    position: absolute;
+    top: 0;
+    width: 600px;
+    height: 600px;
+    left: 0;
+}
+
+#cabecalho {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: greenyellow;
+    text-align: center;
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#menu {
+    background-color: blue;
+    height: 50px;
+    width: 100%;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#conteudo {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: cyan;
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#rodape {
+    position: absolute;
+    top: 100%;
+    height: 70px;
+    width: 100%;
+    background-color: greenyellow;
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+#container-2
+{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 35%;
+    top: 0;
+}
+
+#cabecalho-2
+{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: greenyellow;
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#menu-2
+{
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 530px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+#conteudo-2
+{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: cyan;
+    top: 70px;
+    left: 16.5%;
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#rodape-2
+{
+    position: relative;
+    background-color: greenyellow;
+    height: 40px;
+    z-index: 3;
+    top: -40px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#container-3
+{
+    position: absolute;
+    top: 0;
+    left: 68%;
+    width: 600px;
+    height: 600px;
+}
+
+#cabecalho-3
+{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: greenyellow;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#menu-3
+{
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 88.5%;
+    width: 100px;
+    background-color: blue;
+    color: white;
+}
+
+#conteudo-3
+{
+    position: relative;
+    width: 400px;
+    height: 88.8%;
+    background-color: cyan;
+    top: -88.5%;
+    left: 16.8%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#menu-4
+{
+    position: absolute;
+    right: 0;
+    top: 67px;
+    height: 89%;
+    width: 100px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+#rodape-3
+{
+    position: absolute;
+    top: 93%;
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    background-color: greenyellow;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
