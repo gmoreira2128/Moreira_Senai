@@ -14,17 +14,17 @@ body
     top: 50%;
     left: 50%;
     margin: 0 auto;
-    border: 1px solid green;
+    border: 4px solid green;
     width: 900px;
-    height: 900px;
+    height: 1000px;
     background-color:rgba(241, 250, 241, 1);
 }
 
 .cad-geral
 {
-    border: 1px solid lightgreen;
+    border: 3px solid lightgreen;
     width: 90%;
-    height: 600px;
+    height: 700px;
     left: 50%;
     top: 350px;
     margin: 0 auto;
@@ -48,9 +48,10 @@ body
     left: 2%;
     border: 2px solid lightgreen;
     font-size: small;
-    width: 450px;
+    width: 400px;
     height: 150px;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .dados-pessoais h2
@@ -64,6 +65,27 @@ body
     top: 1%;
 }
 
+.dados-pessoais label
+{
+    position: relative;
+    top: 40px;
+}
+
+.dados-pessoais input
+{
+    position: relative;
+    top: 40px;
+    left: 0px;
+    width: 150px;
+}
+
+.dados-pessoais select
+{
+    position: relative;
+    width: 150px;
+    top: 40px;
+}
+
 select
 {
     background-color: #FFF;
@@ -72,22 +94,92 @@ select
 
 .loc
 {
-    
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 150px;
+    border: 2px solid lightgreen;
+
+    position: relative;
+    left: 55%;
+    top: -125px;
 }
 
-.pratica
-{  
+.loc h2
+{
+    font-size: small;
+    color: green;
+    background-color: white;
+    border: 1px solid green;
+    width: 120px;
+    position: absolute;
+    top: -5px;
+    left: 4%;
+}
+
+.loc input
+{
     position: relative;
-    border: 1px solid lightgreen;
     width: 300px;
-    height: 300px;
-    left: 2%;
-    top: 5%;
+    top: 8%;
+}
+
+.loc label
+{
+    position: relative;
+    top: 8%;
+}
+
+.faixa
+{
+    position: relative;
+    border: 2px solid lightgreen;
+    width: 700px;
+    height: 150px;
+    left: 5%;
+    top: -90px;
+}
+
+.faixa h2
+{
+    position: absolute;
+    font-size: small;
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    width: 120px;
+    top: -4%;
+    left: 3%;
+}
+
+.faixa label
+{
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.faixa input
+{
+    position: relative;
+    left: 50%;
+    top: 4%;
     display: flex;
     flex-direction: column;
 }
 
-
+.pratica
+{
+    position: relative;
+    border: 2px solid lightgreen;
+    width: 700px;
+    height: 300px;
+    left: 5%;
+    top: -6%;
+    display: flex;
+    flex-direction: column;
+}
 
 .pratica h2
 {
@@ -100,13 +192,27 @@ select
     top: -3%;
 }
 
+.pratica label
+{
+    position: relative;
+    left: 15%;
+    top: 10%;
+}
+
+.pratica input
+{
+    position: relative;
+    left: -40%;
+    top: 16%;
+}
+
 .comentarios
 {
     position: relative;
     top: 10%;
     width: 800px;
     height: 200px;
-    border: 1px solid lightgreen;
+    border: 2px solid lightgreen;
 }
 
 .comentarios h2
@@ -123,7 +229,7 @@ select
 .comentarios label
 {
     position: relative;
-    top: -20%;
+    top: -40%;
     left: 5%;
     font-size: small;
     color: green;
@@ -134,6 +240,20 @@ textarea
     position: relative;
     width: 400px;
     height: 100px;
-    top: 40%;
-    left: -2%;
+    top: 15%;
+    left: -1%;
+}
+
+#btn-env 
+{
+    position: absolute;
+    top: 95%;
+    left: 32%;
+}
+
+#btn-lim
+{
+    position: absolute;
+    top: 95%;
+    left: 35%;
 }
