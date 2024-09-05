@@ -1,0 +1,39 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+.Texto
+{
+    background-color: #6eb8f5;
+    width: 600px;
+}
+
+.barra-azulE
+{
+    position: absolute;
+    background-color: blue;
+    width: 400px;
+    height: 38px;
+    left: 31%;
+    top: 0;
+}
+
+.container
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+#UF select
+{
+    width: 50px;
+}
