@@ -9,6 +9,12 @@ body
     font-family: Arial, Helvetica, sans-serif;
 }
 
+input
+{
+    text-decoration: none;
+    outline: none;
+}
+
 .container
 {
     top: 50%;
@@ -137,7 +143,9 @@ select
     width: 700px;
     height: 150px;
     left: 5%;
-    top: -90px;
+    top: -110px;
+    display: flex;
+    flex-direction: column;
 }
 
 .faixa h2
@@ -152,22 +160,37 @@ select
     left: 3%;
 }
 
-.faixa label
+.tres-primeiros
 {
     position: relative;
-    top: 10%;
-    display: flex;
-    flex-direction: row;
-}
-
-.faixa input
-{
-    position: relative;
-    left: 50%;
-    top: 4%;
     display: flex;
     flex-direction: column;
+    top: 20%;
+    left: 20%;
 }
+
+.tres-primeiros input
+{
+    position: relative;
+    left: -55%;
+    top: -15%;
+}
+
+.tres-ultimos
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 70%;
+    top: -45%;
+}
+
+.tres-ultimos input
+{
+    position: relative;
+    left: -55%;
+    top: -15%;
+} 
 
 .pratica
 {
@@ -176,7 +199,7 @@ select
     width: 700px;
     height: 300px;
     left: 5%;
-    top: -6%;
+    top: -12%;
     display: flex;
     flex-direction: column;
 }
@@ -209,7 +232,7 @@ select
 .comentarios
 {
     position: relative;
-    top: 10%;
+    top: 0%;
     width: 800px;
     height: 200px;
     border: 2px solid lightgreen;
@@ -242,18 +265,21 @@ textarea
     height: 100px;
     top: 15%;
     left: -1%;
+    outline: none;
 }
 
 #btn-env 
 {
     position: absolute;
-    top: 95%;
+    top: 100%;
     left: 32%;
+    cursor: pointer;
 }
 
 #btn-lim
 {
     position: absolute;
-    top: 95%;
+    top: 100%;
     left: 35%;
+    cursor: pointer;
 }
