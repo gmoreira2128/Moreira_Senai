@@ -124,7 +124,7 @@ int main() {
         printf("7. Calcular o MMC\n");
         printf("8. Calcular uma equação de Segundo Grau\n");
         printf("9. Calcular o Fatorial\n");
-        printf("10. Calcular a Divisão");
+        printf("10. Calcular a Divisão\n");
         printf("0. Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &escolha);
@@ -205,7 +205,7 @@ int main() {
                 scanf("%lf", &num1);
                 printf("Digite o segundo número: ");
                 scanf("%lf", &num2);
-                printf("A divisão de %.5lf e %.5lf é %.5lf\n", num1, num2, fatorial(num1, num2));
+                printf("A divisão de %.5lf e %.5lf é %.5lf\n", num1, num2, divisao(num1, num2));
                 break;
 
             case 0:
