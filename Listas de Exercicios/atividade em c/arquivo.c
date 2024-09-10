@@ -51,6 +51,11 @@ double multiplicacao(double a, double b) {
     return a * b;
 }
 
+double divisao(double a, double b)
+{
+    return a / b;
+}
+
 // Função para calcular o MDC
 int mdc(int a, int b) {
     while (b != 0) {
@@ -111,14 +116,15 @@ int main() {
     do {
         printf("\nEscolha uma opção:\n");
         printf("1. Calcular a Raiz Quadrada\n");
-        printf("2. Calcular a potência\n");
-        printf("3. Calcular a soma\n");
-        printf("4. Calcular a subtração\n");
-        printf("5. Calcular a multiplicação\n");
+        printf("2. Calcular a Potência\n");
+        printf("3. Calcular a Soma\n");
+        printf("4. Calcular a Subtração\n");
+        printf("5. Calcular a Multiplicação\n");
         printf("6. Calcular o MDC\n");
         printf("7. Calcular o MMC\n");
-        printf("8. Calcular uma equação de segundo grau\n");
-        printf("9. Calcular o fatorial\n");
+        printf("8. Calcular uma equação de Segundo Grau\n");
+        printf("9. Calcular o Fatorial\n");
+        printf("10. Calcular a Divisão");
         printf("0. Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &escolha);
@@ -192,6 +198,14 @@ int main() {
                 if (resultadoFatorial != -1) {
                     printf("O fatorial de %d é %d\n", a, resultadoFatorial);
                 }
+                break;
+
+                case 10: 
+                printf("Digite o primeiro número: ");
+                scanf("%lf", &num1);
+                printf("Digite o segundo número: ");
+                scanf("%lf", &num2);
+                printf("A divisão de %.5lf e %.5lf é %.5lf\n", num1, num2, fatorial(num1, num2));
                 break;
 
             case 0:
