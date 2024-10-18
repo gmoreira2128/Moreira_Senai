@@ -1,2 +1,2 @@
 # Moreira_Senai
-Repositório do curso Técnico de Desenvolvimento de Sistema
+Repositório de atividades do Técnico de Desenvolvimento de Sistema
